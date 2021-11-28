@@ -1,6 +1,6 @@
 
 
-![Debian](.\resources\banner.png)
+![Debian](./resources/banner.png)
 
 ------
 
@@ -25,11 +25,11 @@ Important note: **it's under costruction and based on personal use.**
 
 ##### - download and mod iso images
 
-download an non-free iso:  https://www.debian.org/CD/http-ftp/#firmware
+download an non-free iso:  https://www.debian.org/CD/http-ftp/#firmware<br>
 
-// *for me:*
-// https://cdimage.debian.org/debian-cd/11.1.0/amd64/iso-dvd/*
-// [firmwarepack.zip](.\resources\firmwarepack.zip) *you can and copy n paste all firmaware in new iso inside firmaware/deb11*
+// *for me:*<br>
+// https://cdimage.debian.org/debian-cd/11.1.0/amd64/iso-dvd/*<br>
+// [firmwarepack.zip](.\resources\firmwarepack.zip) *you can and copy n paste all firmaware in new iso inside firmaware/deb11*<br>
 
 
 
@@ -67,40 +67,40 @@ in terminal:
 - get in root	
 	**::** `su root`
 - install sudo
-	**::** ` apt-get install sudo -y`
+	**::** ` apt-get install sudo -y`<br>
 - add your username
-	**::** ` sudo adduser USERNAME sudo`
+	**::** ` sudo adduser USERNAME sudo`<br>
 	-open root permission
-	**::** `sudo chmod  0440  /etc/sudoers`
-	**::** `sudo reboot`
+	**::** `sudo chmod  0440  /etc/sudoers`<br>
+	**::** `sudo reboot`<br>
 
 ##### - if wont, now you can change your hostname
 
-**::**  `sudo gedit /etc/hostname`
-**::**  `sudo gedit /etc/hosts`
-**:: ** `sudo reboot`
+**::**  `sudo gedit /etc/hostname`<br>
+**::**  `sudo gedit /etc/hosts`<br>
+**::**  `sudo reboot`<br>
 
 ##### -  update all:
 
-**::**  `sudo apt-get update`
-**::**  `sudo apt-get upgrade`
-**::**  `sudo apt-get dist-upgrade `	
+**::**  `sudo apt-get update`<br>
+**::**  `sudo apt-get upgrade`<br>
+**::**  `sudo apt-get dist-upgrade `<br>
 
 ##### - remove cd/rom from depencies update and commands
 
-**::**  `sudo sed -i '/cdrom/d' /etc/apt/sources.list`
-**::**  `grep -v '#' /etc/apt/sources.list`
+**::**  `sudo sed -i '/cdrom/d' /etc/apt/sources.list`<br>
+**::**  `grep -v '#' /etc/apt/sources.list`<br>
 
 ##### - Install Git Commands
 
-**::**  `sudo apt update`
-**::**  `sudo apt-get install build-essential dkms git`
+**::**  `sudo apt update`<br>
+**::**  `sudo apt-get install build-essential dkms git`<br>
 
 ##### - Install USB RTL8812BU Chipset Wifi
 
-a - you can find drivere here: https://github.com/morrownr/88x2bu
-b - open terminal and enter into forlder of file (try drag folder)
-**::**  `sudo ./install-driver.sh`	
+a - you can find drivere here: https://github.com/morrownr/88x2bu<br>
+b - open terminal and enter into forlder of file (try drag folder)<br>
+**::**  `sudo ./install-driver.sh`<br>
 
 ##### - add windows (or other) to grub
 
@@ -111,7 +111,7 @@ b - open terminal and enter into forlder of file (try drag folder)
 		select Chainloader,
 		add partition,
 		press "ok" and save grub
-	
+
 	or brutal not raccomended mdoe:
 	show all partitions & get the UUID ( exemple of UIDD 5C24-4944 )
 	:: sudo blkid or sudo blkid /dev/sda2
@@ -149,63 +149,63 @@ b - open terminal and enter into forlder of file (try drag folder)
 
 ##### - Fix suspend/Ibernate problem (Debian doesn't wakeup) -- not work every
 
-**::**  `sudo apt install lightdm`
-**::**  `sudo apt remove light-locker`
+**::**  `sudo apt install lightdm`<br>
+**::**  `sudo apt remove light-locker`<br>
 
-##### - Autologin -- not work every
+##### - Autologin (not work every)
 
-terminal:
-**::**  `sudo nano /etc/gdm3/custom.conf`
+terminal:<br>
+**::**  `sudo nano /etc/gdm3/custom.conf`<br>
 
-	- and edit in:
+	- and edit in:<br>
 	
-	WaylandEnable=false
-	AutomaticLoginEnable=true 
-	AutomaticLogin=bertz
+	WaylandEnable=false<br>
+	AutomaticLoginEnable=true <br>
+	AutomaticLogin=bertz<br>
 
 ##### - remove libreoffice:
 
-**::**  `sudo apt-get remove --purge libreoffice*`
-**::**  `sudo apt-get clean`
-**::**  `sudo apt-get autoremove`
+**::**  `sudo apt-get remove --purge libreoffice*`<br>
+**::**  `sudo apt-get clean`<br>
+**::**  `sudo apt-get autoremove`<br>
 
 ##### - install snap store
 
-**::**  `sudo apt update`
-**::**  `sudo apt install snapd`
-**::**  `sudo snap install core`
-**::**  `sudo snap install snap-store`
+**::**  `sudo apt update`<br>
+**::**  `sudo apt install snapd`<br>
+**::**  `sudo snap install core`<br>
+**::**  `sudo snap install snap-store`<br>
 
 ##### - install flat pack store
 
-**::**  `apt install flatpak`
-**::**  `apt install gnome-software-plugin-flatpak`
-**::**  `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+**::**  `apt install flatpak`<br>
+**::**  `apt install gnome-software-plugin-flatpak`<br>
+**::**  `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`<br>
 
 ##### -  install stacer
 
-**::**  `sudo add-apt-repository ppa:oguzhaninan/stacer`
-**::**  `sudo apt-get update`
-**::**  `sudo apt-get install stacer`
+**::**  `sudo add-apt-repository ppa:oguzhaninan/stacer`<br>
+**::**  `sudo apt-get update`<br>
+**::**  `sudo apt-get install stacer`<br>
 
 ##### - sensor temps
 
-**::**  `apt install hddtemp lm-sensors`
-**::**  `apt-cache search lm-sensors`
-**::**  `sudo apt update  sudo apt upgrade`
-**::**  `sudo sensors-detect`
-**::**  `sensors`
-**::**  `watch sensors`
+**::**  `apt install hddtemp lm-sensors`<br>
+**::**  `apt-cache search lm-sensors`<br>
+**::**  `sudo apt update  sudo apt upgrade`<br>
+**::**  `sudo sensors-detect`<br>
+**::**  `sensors`<br>
+**::**  `watch sensors`<br>
 
-	add extension: https://extensions.gnome.org/extension/841/freon/
+add extension: https://extensions.gnome.org/extension/841/freon/<br>
 
 ##### - Customization:
 
-install loginized : https://github.com/juhaku/loginized
-  *check it:*
-   **::**  `sudo apt-get install gnome-tweak-tool`
-   **::**  `sudo apt-get install chrome-gnome-shell`
-   **::**  `sudo apt-get install gnome-shell-extensions`
+install loginized : https://github.com/juhaku/loginized<br>
+  *check it:*<br>
+   **::**  `sudo apt-get install gnome-tweak-tool`<br>
+   **::**  `sudo apt-get install chrome-gnome-shell`<br>
+   **::**  `sudo apt-get install gnome-shell-extensions`<br>
 
 	Add Shell Restart: https://extensions.gnome.org/extension/4075/shell-restarter/    
 	Add Extension list: https://extensions.gnome.org/extension/3088/extension-list/
