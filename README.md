@@ -8,7 +8,7 @@
 
 ## LINUX DEBIAN - CUSTOM START PIPELINE
 
-Pipelines it's a simple step by step roles for make somethings better.
+A pipelines it's a simple step by step roles for make somethings better.
 This file is a simple annotations for custom installation of linux and relative desktop environment based on *debian + gnome + configuration and extras*.
 
 Important note: **it's under costruction and based on personal use.** 
