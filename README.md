@@ -155,12 +155,12 @@ b - open terminal and enter into forlder of file (try drag folder)<br>
 ##### - Autologin (not work every)
 
 terminal:<br>
-**::**  `sudo nano /etc/gdm3/custom.conf`<br>
+**::**  `sudo nano /etc/gdm3/custom.conf` <br>
 
-	- and edit in:<br>
+and edit inside:
 	
 	WaylandEnable=false<br>
-	AutomaticLoginEnable=true <br>
+	AutomaticLoginEnable=true<br>
 	AutomaticLogin=bertz<br>
 
 ##### - remove libreoffice:
